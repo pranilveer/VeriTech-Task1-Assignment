@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.container >h1{
+    display: flex;
+    justify-content: center;
+}
+
+.header_div {
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.description {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.separator {
+    border-top: 2px dotted #ccc;
+    margin-top: 20px;
+}
+
+.management_team_div {
+    text-align: center;
+}
+
+.management_team_header_div, .development_team_header_div{
+    background-color: blueviolet;
+    color: white;
+    height: 30px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.top_members,
+.bottom_members {
+    display: flex;
+    justify-content: center;
+}
+
+.team_member {
+    text-align: center;
+    margin: 0 20px 20px 20px;
+}
+
+.team_member img {
+    width: 150px;
+    border-radius: 50%;
+}
