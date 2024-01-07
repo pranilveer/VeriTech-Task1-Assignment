@@ -5,18 +5,52 @@ body {
 }
 
 .container {
-    max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
 }
 
-.container >h1{
+.side_image_right,
+.side_image_right2 {
+    display: flex;
+    width: 100vw;
+    justify-content: end;
+    margin: 0;
+
+}
+
+.side_image_right2>img {
+    position: relative;
+    top: 60px;
+    width: 130px;
+    height: 50px;
+}
+
+.side_image_right>img,
+.side_image_left>img {
+    width: 130px;
+    height: 50px;
+}
+
+.side_image_left {
+    transform: scaleX(-1);
+    display: flex;
+    justify-content: right;
+    width: 100vw;
+    position: relative;
+    left: 0;
+    top: 60px;
+}
+
+.container>h1 {
     display: flex;
     justify-content: center;
 }
 
 .header_div {
     text-align: center;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
 }
 
 .header h1 {
@@ -29,16 +63,19 @@ body {
 }
 
 .separator {
-    border-top: 2px dotted #ccc;
-    margin-top: 20px;
+    border-top: 2px dotted black;
+    width: 300px;
+    margin: 20px auto 0;
 }
 
 .management_team_div {
     text-align: center;
 }
 
-.management_team_header_div, .development_team_header_div{
-    background-color: blueviolet;
+.management_team_header_div,
+.development_team_header_div,
+.sales_team_header_div {
+    background-color: #f041ff;
     color: white;
     height: 30px;
     width: 300px;
@@ -59,10 +96,169 @@ body {
 
 .team_member {
     text-align: center;
-    margin: 0 20px 20px 20px;
 }
 
 .team_member img {
     width: 150px;
     border-radius: 50%;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 768px) {
+    .header_div {
+        text-align: center;
+        max-width: 500px;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .header h1 {
+        margin: 10px 0 0;
+        font-size: 1.5rem;
+        font-weight: 600;
+        font-family: sans-serif;
+    }
+
+    .description {
+        width: 80vw;
+        margin: 20px auto;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 30px;
+    }
+
+    .team_member {
+        display: flex;
+        flex-direction: column;
+        height: 280px;
+        width: 150px;
+        margin: 10px;
+        align-items: center;
+    }
+
+    .top_members {
+        padding: 0 40px;
+    }
+    .members {
+        display: flex;
+        overflow: auto;
+        height: 300px;
+        gap: 5rem;
+    }
+    .members::-webkit-scrollbar {
+        display: none;
+      }
+
+    .header_div {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 100vw;
+    }
+
+}
+
+@media screen and (max-width: 330px) {
+    .side_image_right2>img {
+        top: 60px;
+        height: 40px;
+    }
+
+    .side_image_right>img,
+    .side_image_left>img {
+        width: 130px;
+        height: 40px;
+    }
+
+    .side_image_left {
+        transform: scaleX(-1);
+        display: flex;
+        justify-content: right;
+        width: 100vw;
+        position: relative;
+        left: 0;
+        top: 60px;
+    }
+
+    .container>h1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .separator {
+        border-top: 2px dotted black;
+        width: 180px;
+        margin: 20px auto 0;
+    }
+
+    .container>h1 {
+        font-size: 1.5rem;
+    }
+
+    .management_team_div {
+        text-align: center;
+    }
+
+    .management_team_header_div {
+        width: 200px;
+        margin: 20px auto;
+        font-size: 0.6rem;
+    }
+
+    .development_team_header_div {
+        width: 110px;
+        font-size: 0.6rem;
+    }
+
+    
+    .sales_team_header_div{
+        width: 110px;
+        font-size: 0.6rem;
+        text-align: center;
+    }
+
+    .top_members,
+    .bottom_members {
+        display: flex;
+    }
+    .bottom_members {
+        display: flex;
+    }
+
+    .members{
+        display: flex;
+    }
+    .team_member {
+        text-align: center;
+        font-size: 1rem;
+    }
+    .team_member img {
+        width: 100px;
+        border-radius: 50%;
+    }
+
+    
+.side_image_right2>img {
+    position: relative;
+    top: 55px;
+    width: 80px;
+    height: 40px;
+}
+
+.side_image_right>img,
+.side_image_left>img {
+    width: 80px;
+    height: 40px;
+}
+
+.side_image_left {
+    transform: scaleX(-1);
+    display: flex;
+    justify-content: right;
+    width: 100vw;
+    position: relative;
+    left: 0;
+    top: 56px;
+}
 }
