@@ -158,6 +158,25 @@ body {
     }
 
 }
+@media screen and (max-width: 500px){
+    .management_team_header_div {
+        width: 200px;
+        margin: 20px auto;
+        font-size: 0.6rem;
+    }
+
+    .development_team_header_div {
+        width: 110px;
+        font-size: 0.6rem;
+    }
+
+    
+    .sales_team_header_div{
+        width: 110px;
+        font-size: 0.6rem;
+        text-align: center;
+    }
+}
 
 @media screen and (max-width: 330px) {
     .side_image_right2>img {
